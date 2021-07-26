@@ -164,6 +164,35 @@
             android:name=".android.ui.SyncShortcutActivity"
             android:taskAffinity="" />
 
+        <activity
+            android:name=".android.tasker.BasicTaskerAction$ConfigActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Basic Action">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".android.tasker.RunSearchTaskerAction$ConfigActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Get Headlines by Search">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".android.tasker.OnSyncFinishedTaskerEvent$ConfigActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="On Sync Finished">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_EDIT_EVENT" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".android.sync.SyncService"
             android:exported="true" />

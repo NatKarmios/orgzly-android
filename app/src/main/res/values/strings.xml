@@ -698,4 +698,11 @@
 
     <string name="prepend">Prepend</string>
     <string name="insert_new_note_at_beginning">Insert new note at beginning</string>
+
+    <!-- Tasker -->
+    <string name="tasker_search_term">Search Term</string>
+    <string name="tasker_results">Results</string>
+    <string name="tasker_results_desc">The resulting list of headlines, null otherwise</string>
+    <string name="tasker_error_msg">Error Message</string>
+    <string name="tasker_error_msg_desc">The reason for failure, if failed</string>
 </resources>

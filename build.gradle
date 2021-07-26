@@ -63,6 +63,8 @@ buildscript {
 
     versions.jgit = '4.4.1.201607150455-r'
 
+    versions.tasker = '0.4.1'
+
     ext.versions = versions
 
     repositories {

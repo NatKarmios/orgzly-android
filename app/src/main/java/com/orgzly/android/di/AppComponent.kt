@@ -9,6 +9,7 @@ import com.orgzly.android.di.module.DataModule
 import com.orgzly.android.di.module.DatabaseModule
 import com.orgzly.android.reminders.ReminderService
 import com.orgzly.android.sync.SyncService
+import com.orgzly.android.tasker.RunSearchTaskerAction
 import com.orgzly.android.ui.BookChooserActivity
 import com.orgzly.android.ui.TemplateChooserActivity
 import com.orgzly.android.ui.books.BooksFragment
@@ -83,4 +84,6 @@ interface AppComponent {
     fun inject(arg: ListWidgetProvider)
     fun inject(arg: NewNoteBroadcastReceiver)
     fun inject(arg: TimeChangeBroadcastReceiver)
+
+    fun inject(arg: RunSearchTaskerAction.Runner)
 }

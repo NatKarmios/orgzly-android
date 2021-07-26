@@ -185,6 +185,8 @@ dependencies {
         // Resolves DuplicatePlatformClasses lint error
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
     }
+
+    implementation "com.joaomgcd:taskerpluginlibrary:$versions.tasker"
 }
 
 repositories {

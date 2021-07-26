@@ -22,6 +22,7 @@ import com.orgzly.android.db.entity.Repo
 import com.orgzly.android.prefs.AppPreferences
 import com.orgzly.android.reminders.ReminderService
 import com.orgzly.android.repos.*
+import com.orgzly.android.tasker.OnSyncFinishedTaskerEvent
 import com.orgzly.android.ui.notifications.Notifications
 import com.orgzly.android.util.AppPermissions
 import com.orgzly.android.util.LogUtils
@@ -328,6 +329,9 @@ class SyncService : Service() {
             /* Save last successful sync time to preferences. */
             val time = System.currentTimeMillis()
             AppPreferences.lastSuccessfulSyncTime(applicationContext, time)
+
+            /* Trigger Tasker event */
+            OnSyncFinishedTaskerEvent.trigger(context)
 
             return null /* Success. */
         }
